@@ -11,6 +11,12 @@
 * Dynamic, composable components.
 * Complex, polymorphic data flow with RxJS.
 
+### APIs
+
+* `createStore()`: create store.
+* `connect()`: connect store to component.
+* `createAction()`: create the normal, simple actions that no need `rx`.
+
 ### License
 MIT
 

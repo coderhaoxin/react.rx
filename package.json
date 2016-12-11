@@ -1,6 +1,6 @@
 {
   "name": "react.rx",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "react with rxjs",
   "main": "build/index.js",
   "scripts": {
@@ -8,6 +8,7 @@
     "build": "babel lib --out-dir build",
     "prepublish": "npm run build",
     "lint": "eslint lib example",
+    "test-cov": "echo todo",
     "test": "echo todo"
   },
   "repository": "coderhaoxin/react.rx",
@@ -24,7 +25,8 @@
   "dependencies": {
     "clone": "2",
     "react": "15",
-    "rxjs": "^5.0.0-rc.4"
+    "rxjs": "^5.0.0-rc.5",
+    "uuid": "3"
   },
   "devDependencies": {
     "babel-cli": "6",
@@ -39,6 +41,7 @@
     "eslint": "3",
     "eslint-config-bx-bsd": "1",
     "eslint-plugin-react": "6",
+    "jest": "17",
     "react-dom": "15",
     "webpack": "1"
   },
