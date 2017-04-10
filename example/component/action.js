@@ -1,6 +1,6 @@
 
 import { createAction } from '../../'
 
-export const switchItem = createAction(function(id) {
+export const switchItem = createAction((id) => {
   return id
 })

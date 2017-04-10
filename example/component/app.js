@@ -7,9 +7,9 @@ import { connect } from '../../'
 import ItemInfo from './item-info'
 import ItemList from './item-list'
 
-import Store from './store'
+import store from './store'
 
-@connect(Store)
+@connect(store)
 class App extends Component {
   render() {
     const { currentItemId } = this.props
