@@ -8,8 +8,7 @@
     "build": "babel lib --out-dir build",
     "prepublish": "npm run build",
     "lint": "eslint lib example",
-    "test-cov": "echo todo",
-    "test": "echo todo"
+    "test": "jest"
   },
   "repository": "coderhaoxin/react.rx",
   "keywords": [
@@ -32,6 +31,7 @@
     "babel-cli": "6",
     "babel-core": "6",
     "babel-eslint": "7",
+    "babel-jest": "17",
     "babel-loader": "6",
     "babel-plugin-transform-class-properties": "6",
     "babel-plugin-transform-decorators-legacy": "1",
@@ -43,8 +43,20 @@
     "eslint-plugin-react": "6",
     "jest": "19",
     "react": "15",
+    "jest-cli": "17",
+    "react-addons-test-utils": "15",
     "react-dom": "15",
     "webpack": "2"
+  },
+  "jest": {
+    "collectCoverageFrom": ["lib/*.js"],
+    "collectCoverage": true,
+    "testPathDirs": [
+      "test"
+    ],
+    "testRegex": "js$",
+    "verbose": false,
+    "bail": true
   },
   "eslintConfig": {
     "extends": [
